@@ -7,7 +7,6 @@ security:
   funcs:
     getenv:
       - ^HUGO_
-      - NETLIFY
   gotemplates:
     allowActionJSTmpl: true
 
@@ -28,7 +27,7 @@ enableRobotsTXT:        true
 metaDataFormat:         "yaml"
 disableKinds:           ["404", "taxonomy", "term", "RSS"]
 
-publishDir:             "_site"
+publishDir:             "docs"
 
 module:
   mounts:
