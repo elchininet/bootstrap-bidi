@@ -1,6 +1,5 @@
 # Ignore docs files
 /_site/
-docs/
 # Hugo files
 /resources/
 /.hugo_build.lock

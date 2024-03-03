@@ -1,0 +1,12 @@
+.modal-sheet .modal-dialog {
+  width: 380px;
+}
+
+[dir] .modal-sheet .modal-dialog {
+  transition: bottom .75s ease-in-out;
+}
+
+[dir] .modal-sheet .modal-footer {
+  padding-bottom: 2rem;
+}
+
