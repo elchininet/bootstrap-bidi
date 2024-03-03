@@ -117,6 +117,39 @@
               </li>
             </ul>
           </li>
+
+          <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+            <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+            <hr class="d-lg-none my-2 text-white-50">
+          </li>
+
+          <li class="nav-item dropdown">
+            <button
+              id="bd-direction"
+              type="button"
+              class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-display="static"
+            >
+              LTR
+              <span class="d-lg-none ms-2" id="bd-direction-text">Select direction</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-direction-text">
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-direction-value="ltr" aria-pressed="true">
+                  LTR
+                  <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-direction-value="rtl" aria-pressed="false">
+                  RTL
+                  <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+                </button>
+              </li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>

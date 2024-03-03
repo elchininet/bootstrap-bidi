@@ -19,34 +19,18 @@ bootstrap/
 │   ├── bootstrap-grid.css.map
 │   ├── bootstrap-grid.min.css
 │   ├── bootstrap-grid.min.css.map
-│   ├── bootstrap-grid.rtl.css
-│   ├── bootstrap-grid.rtl.css.map
-│   ├── bootstrap-grid.rtl.min.css
-│   ├── bootstrap-grid.rtl.min.css.map
 │   ├── bootstrap-reboot.css
 │   ├── bootstrap-reboot.css.map
 │   ├── bootstrap-reboot.min.css
 │   ├── bootstrap-reboot.min.css.map
-│   ├── bootstrap-reboot.rtl.css
-│   ├── bootstrap-reboot.rtl.css.map
-│   ├── bootstrap-reboot.rtl.min.css
-│   ├── bootstrap-reboot.rtl.min.css.map
 │   ├── bootstrap-utilities.css
 │   ├── bootstrap-utilities.css.map
 │   ├── bootstrap-utilities.min.css
 │   ├── bootstrap-utilities.min.css.map
-│   ├── bootstrap-utilities.rtl.css
-│   ├── bootstrap-utilities.rtl.css.map
-│   ├── bootstrap-utilities.rtl.min.css
-│   ├── bootstrap-utilities.rtl.min.css.map
 │   ├── bootstrap.css
 │   ├── bootstrap.css.map
 │   ├── bootstrap.min.css
-│   ├── bootstrap.min.css.map
-│   ├── bootstrap.rtl.css
-│   ├── bootstrap.rtl.css.map
-│   ├── bootstrap.rtl.min.css
-│   └── bootstrap.rtl.min.css.map
+│   └── bootstrap.min.css.map
 └── js/
     ├── bootstrap.bundle.js
     ├── bootstrap.bundle.js.map
@@ -71,10 +55,10 @@ Bootstrap includes a handful of options for including some or all of our compile
 {{< bs-table "table" >}}
 | CSS files | Layout | Content | Components | Utilities |
 | --- | --- | --- | --- | --- |
-| `bootstrap.css`<br> `bootstrap.min.css`<br> `bootstrap.rtl.css`<br> `bootstrap.rtl.min.css` | Included | Included | Included | Included |
-| `bootstrap-grid.css`<br> `bootstrap-grid.rtl.css`<br> `bootstrap-grid.min.css`<br> `bootstrap-grid.rtl.min.css` | [Only grid system]({{< docsref "/layout/grid" >}}) | — | — | [Only flex utilities]({{< docsref "/utilities/flex" >}}) |
-| `bootstrap-utilities.css`<br> `bootstrap-utilities.rtl.css`<br> `bootstrap-utilities.min.css`<br> `bootstrap-utilities.rtl.min.css` | — | — | — | Included |
-| `bootstrap-reboot.css`<br> `bootstrap-reboot.rtl.css`<br> `bootstrap-reboot.min.css`<br> `bootstrap-reboot.rtl.min.css` | — | [Only Reboot]({{< docsref "/content/reboot" >}}) | — | — |
+| `bootstrap.css`<br> `bootstrap.min.css` | Included | Included | Included | Included |
+| `bootstrap-grid.css`<br> `bootstrap-grid.min.css` | [Only grid system]({{< docsref "/layout/grid" >}}) | — | — | [Only flex utilities]({{< docsref "/utilities/flex" >}}) |
+| `bootstrap-utilities.css`<br> `bootstrap-utilities.min.css` | — | — | — | Included |
+| `bootstrap-reboot.css`<br> `bootstrap-reboot.min.css` | — | [Only Reboot]({{< docsref "/content/reboot" >}}) | — | — |
 {{< /bs-table >}}
 
 ### JS files

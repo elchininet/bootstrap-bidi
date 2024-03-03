@@ -612,12 +612,12 @@ $utilities: (
 Output:
 
 ```css
-/* rtl:begin:remove */
+/* rtl:begin:ignore */
 .text-break {
   word-wrap: break-word !important;
   word-break: break-word !important;
 }
-/* rtl:end:remove */
+/* rtl:end:ignore */
 ```
 
-This doesn't output anything in RTL, thanks to [the RTLCSS `remove` control directive](https://rtlcss.com/learn/usage-guide/control-directives/#remove).
+This doesn't output anything in RTL, thanks to [the PostCSS RTLCSS `ignore` control directive](https://github.com/elchininet/postcss-rtlcss#rtlbeginignore-and-rtlendignore).

@@ -3,7 +3,7 @@ body {
   overflow-x: hidden; /* Prevent scroll on narrow devices */
 }
 
-body {
+[dir] body {
   padding-top: 56px;
 }
 
@@ -12,18 +12,36 @@ body {
     position: fixed;
     top: 56px; /* Height of navbar */
     bottom: 0;
-    left: 100%;
     width: 100%;
-    padding-right: 1rem;
-    padding-left: 1rem;
     overflow-y: auto;
     visibility: hidden;
+  }
+
+  [dir] .offcanvas-collapse {
+    padding-right: 1rem;
+    padding-left: 1rem;
     background-color: #343a40;
     transition: transform .3s ease-in-out, visibility .3s ease-in-out;
   }
+
+  [dir="ltr"] .offcanvas-collapse {
+    left: 100%;
+  }
+
+  [dir="rtl"] .offcanvas-collapse {
+    right: 100%;
+  }
+
   .offcanvas-collapse.open {
     visibility: visible;
+  }
+
+  [dir="ltr"] .offcanvas-collapse.open {
     transform: translateX(-100%);
+  }
+
+  [dir="rtl"] .offcanvas-collapse.open {
+    transform: translateX(100%);
   }
 }
 
@@ -32,10 +50,13 @@ body {
 }
 
 .nav-scroller .nav-link {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
   font-size: .875rem;
   color: #6c757d;
+}
+
+[dir] .nav-scroller .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
 }
 
 .nav-scroller .nav-link:hover {
@@ -47,6 +68,6 @@ body {
   color: #343a40;
 }
 
-.bg-purple {
+[dir] .bg-purple {
   background-color: #6f42c1;
 }

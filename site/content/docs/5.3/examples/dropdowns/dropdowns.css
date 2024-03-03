@@ -1,22 +1,36 @@
 .dropdown-item-danger {
   color: var(--bs-red);
 }
+
 .dropdown-item-danger:hover,
 .dropdown-item-danger:focus {
   color: #fff;
+}
+
+[dir] .dropdown-item-danger:hover,
+[dir] .dropdown-item-danger:focus {
   background-color: var(--bs-red);
 }
-.dropdown-item-danger.active {
+
+[dir] .dropdown-item-danger.active {
   background-color: var(--bs-red);
 }
 
 .btn-hover-light {
   color: var(--bs-body-color);
+}
+
+[dir] .btn-hover-light {
   background-color: var(--bs-body-bg);
 }
+
 .btn-hover-light:hover,
 .btn-hover-light:focus {
   color: var(--bs-link-hover-color);
+}
+
+[dir] .btn-hover-light:hover,
+[dir] .btn-hover-light:focus {
   background-color: var(--bs-tertiary-bg);
 }
 
@@ -27,11 +41,16 @@
   grid-template-columns: repeat(7, 1fr);
   align-items: center;
 }
+
 .cal-month-name {
   grid-column-start: 2;
   grid-column-end: 7;
+}
+
+[dir] .cal-month-name {
   text-align: center;
 }
+
 .cal-weekday,
 .cal-btn {
   display: flex;
@@ -39,19 +58,29 @@
   align-items: center;
   justify-content: center;
   height: 3rem;
+}
+
+[dir] .cal-weekday,
+[dir] .cal-btn {
   padding: 0;
 }
+
 .cal-btn:not([disabled]) {
   font-weight: 500;
   color: var(--bs-emphasis-color);
 }
-.cal-btn:hover,
-.cal-btn:focus {
+
+[dir] .cal-btn:hover,
+[dir] .cal-btn:focus {
   background-color: var(--bs-secondary-bg);
 }
+
 .cal-btn[disabled] {
-  border: 0;
   opacity: .5;
+}
+
+[dir] .cal-btn[disabled] {
+  border: 0;
 }
 
 .w-220px {

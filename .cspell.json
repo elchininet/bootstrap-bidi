@@ -86,6 +86,7 @@
     "rgba",
     "roboto",
     "RTLCSS",
+    "PostCSS RTLCSS",
     "ruleset",
     "screenreaders",
     "scrollbars",
@@ -126,7 +127,6 @@
     ".cspell.json",
     "dist/",
     "*.min.*",
-    "**/*rtl*",
     "**/tests/**"
   ],
   "useGitignore": true

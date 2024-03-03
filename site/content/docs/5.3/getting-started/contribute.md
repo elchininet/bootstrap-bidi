@@ -48,9 +48,9 @@ Bootstrap uses [Autoprefixer](https://github.com/postcss/autoprefixer) (included
 
 We maintain the list of browsers supported through Autoprefixer in a separate file within our GitHub repository. See [.browserslistrc]({{< param repo >}}/blob/v{{< param current_version >}}/.browserslistrc) for details.
 
-## RTLCSS
+## PostCSS RTLCSS
 
-Bootstrap uses [RTLCSS](https://rtlcss.com/) to process compiled CSS and convert them to RTL – basically replacing horizontal direction aware properties (e.g. `padding-left`) with their opposite. It allows us only write our CSS a single time and make minor tweaks using RTLCSS [control](https://rtlcss.com/learn/usage-guide/control-directives/) and [value](https://rtlcss.com/learn/usage-guide/value-directives/) directives.
+Bootstrap uses [PostCSS RTLCSS](https://github.com/elchininet/postcss-rtlcss) to process compiled CSS and make it work with both directions, LTR (Left to Right) and RTL (Right to Left) – basically creating new rules that change horizontal direction aware properties (e.g. `padding-left`) with their opposite. It allows us only write our CSS a single time and make minor tweaks using PostCSS RTLCSS [control](https://github.com/elchininet/postcss-rtlcss#control-directives) and [value](https://github.com/elchininet/postcss-rtlcss#value-directives) directives (inherited or mimicked from the [RTLCSS](https://rtlcss.com/learn/usage-guide/control-directives/) ones).
 
 ## Local documentation
 

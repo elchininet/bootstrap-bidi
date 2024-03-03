@@ -1,16 +1,27 @@
 /* stylelint-disable @stylistic/selector-list-comma-newline-after */
 
 .blog-header-logo {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
   font-size: 2.25rem;
+}
+
+[dir="ltr"] .blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+[dir="rtl"] .blog-header-logo {
+  font-family: Amiri, Georgia, "Times New Roman", serif;
 }
 
 .blog-header-logo:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+[dir="ltr"] h1, [dir="ltr"] h2, [dir="ltr"] h3, [dir="ltr"] h4, [dir="ltr"] h5, [dir="ltr"] h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] h4, [dir="rtl"] h5, [dir="rtl"] h6 {
+  font-family: Amiri, Georgia, "Times New Roman", serif;
 }
 
 .flex-auto {
@@ -18,22 +29,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .h-250 { height: 250px; }
+
 @media (min-width: 768px) {
   .h-md-250 { height: 250px; }
 }
 
 /* Pagination */
-.blog-pagination {
+[dir] .blog-pagination {
   margin-bottom: 4rem;
 }
 
 /*
  * Blog posts
  */
-.blog-post {
+[dir] .blog-post {
   margin-bottom: 4rem;
 }
+
 .blog-post-meta {
-  margin-bottom: 1.25rem;
   color: #727272;
+}
+
+[dir] .blog-post-meta {
+  margin-bottom: 1.25rem;
 }

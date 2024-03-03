@@ -9,6 +9,8 @@
 
   const getStoredTheme = () => localStorage.getItem('theme')
   const setStoredTheme = theme => localStorage.setItem('theme', theme)
+  const getStoredDirection = () => localStorage.getItem('direction')
+  const setStoredDirection = direction => localStorage.setItem('direction', direction)
 
   const getPreferredTheme = () => {
     const storedTheme = getStoredTheme()
@@ -28,6 +30,17 @@
   }
 
   setTheme(getPreferredTheme())
+
+  const getPreferredDirection = () => {
+    const storedDirection = getStoredDirection()
+    return storedDirection || 'ltr'
+  }
+
+  const setDirection = direction => {
+    document.documentElement.setAttribute('dir', direction)
+  }
+
+  setDirection(getPreferredDirection())
 
   const showActiveTheme = (theme, focus = false) => {
     const themeSwitcher = document.querySelector('#bd-theme')
@@ -57,6 +70,27 @@
     }
   }
 
+  const showActiveDirection = (direction, focus = false) => {
+    const directionSwitcher = document.querySelector('#bd-direction')
+
+    if (!directionSwitcher) {
+      return
+    }
+
+    document.querySelectorAll('[data-bs-direction-value]').forEach(element => {
+      element.classList.remove('active')
+      element.setAttribute('aria-pressed', 'false')
+    })
+
+    const btnToActive = document.querySelector(`[data-bs-direction-value="${direction}"]`)
+    btnToActive.classList.add('active')
+    btnToActive.setAttribute('aria-pressed', 'true')
+
+    if (focus) {
+      directionSwitcher.focus()
+    }
+  }
+
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
     const storedTheme = getStoredTheme()
     if (storedTheme !== 'light' && storedTheme !== 'dark') {
@@ -66,6 +100,7 @@
 
   window.addEventListener('DOMContentLoaded', () => {
     showActiveTheme(getPreferredTheme())
+    showActiveDirection(getPreferredDirection())
 
     document.querySelectorAll('[data-bs-theme-value]')
       .forEach(toggle => {
@@ -74,6 +109,16 @@
           setStoredTheme(theme)
           setTheme(theme)
           showActiveTheme(theme, true)
+        })
+      })
+
+    document.querySelectorAll('[data-bs-direction-value]')
+      .forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const direction = toggle.getAttribute('data-bs-direction-value')
+          setStoredDirection(direction)
+          setDirection(direction)
+          showActiveDirection(direction, true)
         })
       })
   })
