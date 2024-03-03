@@ -26,7 +26,7 @@ body {
   margin-left: .25rem;
 }
 
-/* stylelint-disable-next-line selector-max-universal */
+/* stylelint-disable-next-line selector-max-universal, selector-max-compound-selectors */
 [dir] .bd-heading + div > * + * {
   margin-top: 3rem;
 }

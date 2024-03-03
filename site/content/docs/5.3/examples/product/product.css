@@ -89,6 +89,7 @@
 
 [dir="rtl"] .product-device-2 {
   left: auto;
+  /* stylelint-disable-next-line order/properties-order */
   right: 5%;
 }
 
