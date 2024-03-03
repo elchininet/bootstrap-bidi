@@ -301,13 +301,13 @@ $enable-important-utilities: false;
             rtl: false
           )
         ) {
-          /* rtl:begin:remove */
+          /* rtl:begin:ignore */
 
           .padding-1rem {
             padding: 1rem;
           }
 
-          /* rtl:end:remove */
+          /* rtl:end:ignore */
 
         }
       }

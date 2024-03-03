@@ -122,7 +122,7 @@
       description: "Turn your expandable navbar into a sliding offcanvas menu (doesn't use our offcanvas component)."
 
 - category: RTL
-  description: "See Bootstrap's RTL version in action with these modified Custom Components examples."
+  description: "See Bootstrap's RTL version in action with these modified Custom Components examples. (do not forget to switch from LTR to RTL in the header)"
   examples:
     - name: Album RTL
       description: "Simple one-page template for photo galleries, portfolios, and more."

@@ -50,7 +50,7 @@
 
     @if $value != null {
       @if $is-rtl == false {
-        /* rtl:begin:remove */
+        /* rtl:begin:ignore */
       }
 
       @if $is-css-var {
@@ -90,7 +90,7 @@
       }
 
       @if $is-rtl == false {
-        /* rtl:end:remove */
+        /* rtl:end:ignore */
       }
     }
   }
