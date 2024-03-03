@@ -23,7 +23,7 @@ There are two strict requirements for enabling RTL in Bootstrap-powered pages.
 1. Set `dir="rtl"` on the `<html>` element.
 2. Add an appropriate `lang` attribute, like `lang="ar"`, on the `<html>` element.
 
-From there, you'll need to include the bootstrao CSS. For example, here's the stylesheet for our compiled and minified CSS:
+From there, you'll need to include the bootstrap CSS. For example, here's the stylesheet for our compiled and minified CSS:
 
 ```html
 <link rel="stylesheet" href="{{< param "cdn.css" >}}" integrity="{{< param "cdn.css_hash" >}}" crossorigin="anonymous">
@@ -73,7 +73,7 @@ Get started with one of our several [RTL examples]({{< docsref "/examples/#rtl" 
 
 Our approach to building RTL support into Bootstrap comes with two important decisions that impact how we write and use our CSS:
 
-1. **First, we decided to build it with the [PostCSS RTLCSS](https://github.com/elchininet/postcss-rtlcss) project.** This gives us some powerful features for managing changes and overrides when moving from LTR to RTL. It also allows us to build a directiopn agnostic version of Bootstrap from one codebase.
+1. **First, we decided to build it with the [PostCSS RTLCSS](https://github.com/elchininet/postcss-rtlcss) project.** This gives us some powerful features for managing changes and overrides when moving from LTR to RTL. It also allows us to build a direction agnostic version of Bootstrap from one codebase.
 
 2. **Second, we've renamed a handful of directional classes to adopt a logical properties approach.** Most of you have already interacted with logical properties thanks to our flex utilities—they replace direction properties like `left` and `right` in favor `start` and `end`. That makes the class names and values appropriate for LTR and RTL without any overhead.
 
