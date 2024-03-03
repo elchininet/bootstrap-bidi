@@ -11,7 +11,9 @@ export default context => {
       autoprefixer: {
         cascade: false
       },
-      rtlcss: context.env === 'RTL'
+      'postcss-rtlcss': {
+        safeBothPrefix: true
+      }
     }
   }
 }
