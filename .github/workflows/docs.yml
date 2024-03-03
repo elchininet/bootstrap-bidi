@@ -44,7 +44,7 @@ jobs:
       - name: Run linkinator
         uses: JustinBeckwith/linkinator-action@v1
         with:
-          paths: _site
+          paths: docs
           recurse: true
           verbosity: error
           skip: "^(?!http://localhost)"

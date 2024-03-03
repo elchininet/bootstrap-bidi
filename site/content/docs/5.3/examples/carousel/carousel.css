@@ -54,12 +54,10 @@ body {
 }
 
 /* Thin out the marketing headings */
-/* rtl:begin:ignore */
+
 .featurette-heading {
   letter-spacing: -.05rem;
 }
-
-/* rtl:end:ignore */
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
